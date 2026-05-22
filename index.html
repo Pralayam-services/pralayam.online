@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Freelancer Portfolio</title>
+  <title>Pralayam Services</title>
 
   <style>
     * {
@@ -30,9 +30,23 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .logo-text {
       font-size: 28px;
       font-weight: bold;
       color: #38bdf8;
@@ -98,17 +112,12 @@
       text-align: center;
     }
 
-    .hero-image div {
-      width: 320px;
-      height: 320px;
-      margin: auto;
-      border-radius: 30px;
-      background: linear-gradient(135deg, #38bdf8, #9333ea);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 100px;
-      font-weight: bold;
+    .hero-image img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 25px;
+      border: 4px solid #38bdf8;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
     }
 
     .section-title {
@@ -159,16 +168,6 @@
       text-align: center;
     }
 
-    input {
-      width: 100%;
-      max-width: 400px;
-      padding: 15px;
-      border-radius: 10px;
-      border: none;
-      margin-bottom: 20px;
-      font-size: 16px;
-    }
-
     footer {
       text-align: center;
       padding: 30px 0;
@@ -177,6 +176,12 @@
     }
 
     @media(max-width: 768px) {
+
+      header {
+        justify-content: center;
+        gap: 20px;
+      }
+
       .hero {
         flex-direction: column;
         text-align: center;
@@ -185,15 +190,26 @@
       .hero-text h1 {
         font-size: 42px;
       }
+
+      nav a {
+        margin: 0 10px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
 
     <header>
-      <div class="logo">Freelancer</div>
+
+      <div class="logo">
+        <!-- Replace logo.png with your logo file name -->
+        <img src="logo.png" alt="Pralayam Logo">
+
+        <div class="logo-text">Pralayam Services</div>
+      </div>
 
       <nav>
         <a href="#home">Home</a>
@@ -201,95 +217,122 @@
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
+
     </header>
 
     <section class="hero" id="home">
+
       <div class="hero-text">
+
         <h1>Hello, I'm <span>PRABHU DHAYALAN</span></h1>
 
         <p>
-          Professional freelancer, an Efficient Service Engineer providing service support to all Electronic Instruments	.
+          Professional freelancer, an Efficient Service Engineer providing service support to all Electronic Instruments.
         </p>
 
         <a href="#contact" class="btn">Hire Me</a>
         <a href="#services" class="btn">My Services</a>
+
       </div>
 
       <div class="hero-image">
 
-  <img src="C:\Users\produ\Desktop\My Photo.png" width="500">
+        <!-- Replace photo.png with your photo file name -->
+        <img src="photo.png" alt="Prabhu Photo">
 
       </div>
+
     </section>
 
     <section class="services" id="services">
+
       <h2 class="section-title">My Services</h2>
 
       <div class="service-grid">
+
         <div class="card">
-          <h3>💻 Maintanence Services</h3>
-          <p>Annual and Periodic Maintanence Undertaken for All kind of Scientific Instruments and laboratory Equipments</p>
+          <h3>💻 Maintenance Services</h3>
+
+          <p>
+            Annual and Periodic Maintenance undertaken for all kinds of Scientific Instruments and Laboratory Equipment.
+          </p>
         </div>
 
         <div class="card">
-          <h3>🎨 Repair Services</h3>
-          <p>Repairs and Replacement are undertaken provided the spares are available.  If required, spares will also be supplied upon availability in the Market</p>
+          <h3>🔧 Repair Services</h3>
+
+          <p>
+            Repairs and replacement are undertaken provided the spares are available. Spare supply can also be arranged upon market availability.
+          </p>
         </div>
 
         <div class="card">
-          <h3>📱Installation and Training Supports</h3>
-          <p>User-Installation and Training to the Users will be provided upon authorisation from OEM's.</p>
+          <h3>📘 Installation & Training</h3>
+
+          <p>
+            User installation and training support will be provided upon authorization from OEMs.
+          </p>
         </div>
+
       </div>
+
     </section>
 
     <section class="about" id="about">
+
       <div class="about-box">
+
         <h2 class="section-title">About Me</h2>
 
         <p>
-          I am passionate in Electronics and having experience of servicing various sophisticated scientific research instruments.  I am expanding my experience and knowledge to the customer who requires the service support for their sophisticated instruments.  Remember, Where there is no Support from OEM, I am here to support...
+          I am passionate about Electronics and experienced in servicing sophisticated scientific research instruments.
+          I provide reliable service support for laboratories and institutions requiring technical expertise.
+          Where there is no support from OEM, I am here to support.
         </p>
+
       </div>
+
     </section>
 
     <section class="contact" id="contact">
-  <h2 class="section-title">Contact Me</h2>
 
-  <p style="margin-bottom:20px; color:#cbd5e1;">
-    Need service support for scientific and laboratory instruments?
-    Feel free to contact me anytime.
-  </p>
+      <h2 class="section-title">Contact Me</h2>
 
-  <div style="margin-bottom:25px;">
+      <p style="margin-bottom:20px; color:#cbd5e1;">
+        Need service support for scientific and laboratory instruments?
+        Feel free to contact me anytime.
+      </p>
 
-    <p style="margin-bottom:10px;">
-      📧 Email:
-      <a href="mailto:er.prabhu89@gmail.com"
-         style="color:#38bdf8; text-decoration:none;">
-         er.prabhu89@gmail.com
+      <div style="margin-bottom:25px;">
+
+        <p style="margin-bottom:10px;">
+          📧 Email:
+          <a href="mailto:er.prabhu89@gmail.com"
+             style="color:#38bdf8; text-decoration:none;">
+             er.prabhu89@gmail.com
+          </a>
+        </p>
+
+        <p>
+          📞 Phone:
+          <a href="tel:+918248774215"
+             style="color:#38bdf8; text-decoration:none;">
+             +91 82487 74215
+          </a>
+        </p>
+
+      </div>
+
+      <a href="mailto:er.prabhu89@gmail.com" class="btn">
+        Send Email
       </a>
-    </p>
 
-    <p>
-      📞 Phone:
-      <a href="tel:+918248774215"
-         style="color:#38bdf8; text-decoration:none;">
-         +91 82487 74215
-      </a>
-    </p>
-
-  </div>
-
-  <a href="mailto:er.prabhu89@gmail.com" class="btn">
-    Send Email
-  </a>
-</section>
+    </section>
 
   </div>
 
   <footer>
-    © 2026 Freelancer Portfolio Website
+    © 2026 Pralayam Services Website
   </footer>
 
 </body>
